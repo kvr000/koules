@@ -335,8 +335,9 @@ rerand:;
   return (1);
 }
 
-INLINE void
-normalize (float *x, float *y, float size)
+#if !(defined(__GNUC__)&&!defined(ONLYANSI))
+void
+normalize (float *x, float *y, CONST float size)
 {
   float           length = sqrt ((*x) * (*x) + (*y) * (*y));
   if (length == 0)
@@ -344,6 +345,7 @@ normalize (float *x, float *y, float size)
   *x *= size / length;
   *y *= size / length;
 }
+#endif
 
 
 static void

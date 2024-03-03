@@ -18,7 +18,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 int             pressed[SDLK_LAST];
 int             n_pressed = 0;
@@ -28,36 +28,36 @@ void
 UpdateInput (void)
 {
   SDL_Event       event;
-  int             val = -1;
 
-  if (!SDL_PollEvent (&event))
-    return;
+  while (SDL_PollEvent (&event)) {
+    int             val = -1;
 
-  switch (event.type)
-    {
-    case SDL_KEYDOWN:
-      val = 1;
-      last_pressed = event.key.keysym.sym;
-      break;
-    case SDL_KEYUP:
-      val = 0;
-      last_pressed = 0;
-      break;
-    case SDL_MOUSEBUTTONDOWN:
-      n_pressed++;
-      break;
-    case SDL_MOUSEBUTTONUP:
-      n_pressed--;
-      break;
-    default:
-      return;
-    }
+    switch (event.type)
+      {
+      case SDL_KEYDOWN:
+        val = 1;
+        last_pressed = event.key.keysym.sym;
+        break;
+      case SDL_KEYUP:
+        val = 0;
+        last_pressed = 0;
+        break;
+      case SDL_MOUSEBUTTONDOWN:
+        n_pressed++;
+        break;
+      case SDL_MOUSEBUTTONUP:
+        n_pressed--;
+        break;
+      default:
+        break;
+      }
 
-  if (val >= 0)
-    {
-      n_pressed += val ? 1 : -1;
-      pressed[event.key.keysym.sym] = val;
-    }
+    if (val >= 0)
+      {
+        n_pressed += val ? 1 : -1;
+        pressed[event.key.keysym.sym] = val;
+      }
+  }
 }
 
 int

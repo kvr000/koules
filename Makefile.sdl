@@ -30,6 +30,8 @@ SDL_gfx_LIBS = $(shell pkg-config --libs SDL_gfx)
 CC	 = gcc
 OPTIMIZE = -fomit-frame-pointer -O3 -ffast-math -s -Dlinux -Wall
 OPTIMIZE1 = -fomit-frame-pointer -O6  -ffast-math -funroll-loops -finline-functions   -s -Dlinux -Wall
+#OPTIMIZE = -O0 -g -Dlinux -Wall
+#OPTIMIZE1 = $(OPTIMIZE)
 CFLAGS	 = -Isdl -DHAVEUSLEEP $(DEFINES) $(SDL_gfx_CFLAGS) $(ARCH) $(JOYSTICK) -DSOUNDDIR="\"$(SOUNDDIR)\"" $(SOUND) $(MOUSE) $(NET)\
 	-DSOUNDSERVER=\"$(SOUNDDIR)/$(SOUNDSERVER)\" \
 	-DSOUNDDIR=\"$(SOUNDDIR)\" \

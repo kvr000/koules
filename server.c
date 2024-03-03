@@ -80,7 +80,7 @@ static long     sizes[MAXPACKET];
 static long     isizes[MAXPACKET];
 char            acceled[5];
 #endif
-struct control  controls[MAXROCKETS];
+extern struct control  controls[MAXROCKETS];
 static unsigned char Clientmap[5];
 static int      Socket;
 /*static int      tbreak; */

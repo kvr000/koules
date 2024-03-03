@@ -19,9 +19,9 @@
 #include <time.h>
 #include <signal.h>
 
-#include <SDL.h>
-#include <SDL_gfxPrimitives.h>
-#include <SDL_gfxPrimitives_font.h>
+#include <SDL/SDL.h>
+#include <SDL/SDL_gfxPrimitives.h>
+#include <SDL/SDL_gfxPrimitives_font.h>
 
 #include "../koules.h"
 #include "../server.h"
@@ -346,7 +346,6 @@ main (int argc, char *argv[])
 
   setcustompalette (0, 1);
 
-  printf ("Starting MS-DOS...\n\n\n");
   if (initialize () != 0)
     return 1;
 
@@ -357,14 +356,8 @@ main (int argc, char *argv[])
 #endif
   gamemode = MENU;
 
-  printf ("HIMEM is testing extended memory...");
-  fflush (stdout);
   drawbackground ();
-  printf ("done.\n");
-  printf ("\n");
   drawstarbackground ();
-  printf ("A:\\>");
-  fflush (stdout);
 
   keys[0][0] = SDLK_UP;
   keys[0][1] = SDLK_DOWN;

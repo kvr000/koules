@@ -18,7 +18,7 @@
 #define _KOULES_SDL_INTERFACE_H
 
 #include <stdbool.h>
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 typedef SDL_Surface *BitmapType;
 typedef SDL_Surface *VScreenType;
