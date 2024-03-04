@@ -52,6 +52,7 @@ extern int      DIV;
 #define EYE_RADIUS (DIV==1?5:6)
 #define MOUSE_RADIUS 4
 
+void            SetFullScreen (int fullscreen);
 RawBitmapType   CreateBitmap (const int, const int);
 BitmapType      CompileBitmap (const int, const int, const RawBitmapType);
 void            ClearScreen (void);

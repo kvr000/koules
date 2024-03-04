@@ -122,6 +122,7 @@ extern void DrawText(int,int,char *);
 
 #endif
 
+inline void     SetFullScreen (int fullscreen) {}
 extern void     SetColor (int);
 extern void     SetWidth (int);
 extern void     SetStipple (int, int, Pixmap);

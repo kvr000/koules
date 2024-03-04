@@ -167,6 +167,11 @@ uninitializes (int num)
   exit (1);
 }
 
+void SetFullScreen(int fullscreen)
+{
+  SDL_WM_ToggleFullScreen(sdl_screen);
+}
+
 /* Start the ball rolling. */
 int
 main (int argc, char *argv[])

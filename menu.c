@@ -40,6 +40,7 @@ typedef struct
   }
 Numbers;
 
+int             is_full_screen = 0;
 int             ssound = 1;
 static Numbers  minim[2], maxim[2];
 static int      nmenu;
@@ -283,6 +284,13 @@ levelchange ()
 
 
 static void
+full_screen ()
+{
+  is_full_screen = !is_full_screen;
+  SetFullScreen(is_full_screen);
+}
+
+static void
 quit ()
 {
 #ifdef NETSUPPORT
@@ -483,7 +491,7 @@ static void
 nmain_menu ()
 {
   nnumbers = 2;
-  nmenu = 8;
+  nmenu = 9;
   menu[0].text = "START GAME";
   menu[0].func = start;
   menu[1].text = playertext;
@@ -533,8 +541,10 @@ nmain_menu ()
   menu[6].text = "SOUND OFF(NOT AVAIABLE)";
 #endif
   menu[6].func = setsound;
-  menu[7].text = "QUIT";
-  menu[7].func = quit;
+  menu[7].text = "FULL SCREEN";
+  menu[7].func = full_screen;
+  menu[8].text = "QUIT";
+  menu[8].func = quit;
   selected = 0;
   fit_selector ();
 }
@@ -600,8 +610,10 @@ cmain_menu ()
   menu[2].text = "SOUND OFF(NOT AVAIABLE)";
 #endif
   menu[2].func = setsound;
-  menu[3].text = "QUIT";
-  menu[3].func = quit;
+  menu[3].text = "FULL SCREEN";
+  menu[3].func = full_screen;
+  menu[4].text = "QUIT";
+  menu[4].func = quit;
   selected = 0;
   fit_selector ();
 }

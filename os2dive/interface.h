@@ -71,6 +71,8 @@ gl_putboxmaskcompiled((x),(y),(xsize),(ysize),(bitmap))
 #define EnableClipping() gl_enableclipping()
 #define DisableClipping() gl_disableclipping()
 
+inline void     SetFullScreen (int fullscreen) {}
+
 extern inline void
 DrawBlackMaskedText (int x, int y, char *text)
 {

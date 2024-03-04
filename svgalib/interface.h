@@ -76,6 +76,8 @@ extern VScreenType starbackground;
 #endif
 #define SetScreen(screen) gl_setcontext (screen)
 
+inline void     SetFullScreen (int fullscreen) {}
+
 extern inline void
 DrawBlackMaskedText (int x, int y, char *text)
 {
