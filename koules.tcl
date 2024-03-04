@@ -1,5 +1,5 @@
 #!/usr/bin/wish
-wm title . "Koules 1.4"
+wm title . "Koules 1.5"
 # This is simple user (anti)friendly dialog for starting koules
 # Only reason why I did it is that I wanted to try tcl/tk
 #files - configure here if paths are differ

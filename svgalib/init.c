@@ -278,7 +278,7 @@ main (int argc, char **argv)
 	  "                                The  game\n"
 	  "                               K O U L E S\n"
 	  "                               For svgalib\n"
-	  "                               Version:1.4\n"
+	  "                               Version:1.5\n"
 	  "\n\n\n\n"
 	  "                    Copyright(c) Jan Hubicka 1995, 1996\n\n\n");
   while ((c = getopt (argc, argv, "fKWD:P:L:SC:slExMmdh")) != EOF)

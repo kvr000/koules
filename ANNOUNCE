@@ -1,4 +1,4 @@
-                                   Koules 1.4
+                                   Koules 1.5
                                        by
                                     JAHUSOFT
 
@@ -23,8 +23,8 @@ tsx-11.mit.edu:   /pub/linux/sources/usr.games
                   /pub/linux/binaries/usr.games
 ftp.x.com:	  /contrib/games
 
-Major changes to v1.4:
-	o	Fixed crash in 51st level
+Major changes to v1.5:
+	o	Port to SDL
 
 Tested platforms: Linux, HP-UX, OS/2, Solaris, DEC, AIX, IRIX
 Sound: Linux, FreeBSD,OS/2, sun, HP-UX, rplay, NAS
@@ -37,7 +37,7 @@ README:
                       // //   //  //  //  //  //    //       //         
                      //  //   ////    ////   ///// /////  ///
      *         .
-                                      v1.4
+                                      v1.5
                                        by                       .      .
                  .
 

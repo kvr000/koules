@@ -1,6 +1,6 @@
 Begin3
 Title:          Koules - an action game for UNIX/X11 and Linux/svgalib and OS/2
-Version:        1.4
+Version:        1.5
 Entered-date:   Mar 1 1998
 
 Description:    Koules is a fast action  arcade-style game for UNIX 
@@ -17,10 +17,10 @@ Author:         hubicka@freesoft.cz (Jan Hubicka)
 Maintained-by:  hubicka@freesoft.cz (Jan Hubicka)
 
 Primary-site:   sunsite.unc.edu /pub/Linux/games/video/koules
-		192kb koules1.4-src.tar.gz
+		192kb koules1.5-src.tar.gz
 
 Alternate-site: tsx-11.mit.edu /pub/linux/binaries/usr.games
-		192kb koules1.4-src.tar.gz
+		192kb koules1.5-src.tar.gz
 
 Platform:       Linux, svgalib 1.2.0 or greater, hpux, sun, freeBSD, IRIX,
 		ULTRIX, OS/2

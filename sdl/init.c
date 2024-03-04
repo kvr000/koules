@@ -111,7 +111,7 @@ initialize (void)
       fprintf (stderr, "%s\n", SDL_GetError ());
       return -1;
     }
-  SDL_WM_SetCaption ("Koules for SDL version 1.4 by Jan Hubicka", "Koules");
+  SDL_WM_SetCaption ("Koules for SDL version 1.5 by Jan Hubicka", "Koules");
 
   backscreen = SDL_CreateRGBSurface (SDL_HWSURFACE,
 				     sdl_screen->w, sdl_screen->h,

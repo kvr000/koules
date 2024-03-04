@@ -335,7 +335,7 @@ initialize (char **argv, int argc)
   XSizeHints     *sizehints;
   XTextProperty   windowName;
   XTextProperty   iconName;
-  char           *title = "Koules for X version 1.4 by Jan Hubicka";
+  char           *title = "Koules for X version 1.5 by Jan Hubicka";
   char           *title1 = "Koules";
 
   Font            f;
@@ -653,7 +653,7 @@ main (int argc, char **argv)
 	  "                                The  game\n"
 	  "                               K O U L E S\n"
 	  "                                  For X\n"
-	  "				  Version 1.4\n"
+	  "				  Version 1.5\n"
 	  "\n\n\n\n"
 	  "                     Copyright(c) Jan Hubicka 1995, 1996\n\n\n");
   useprivate = 0;
